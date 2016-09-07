@@ -1,0 +1,23 @@
+/**
+* File: search-box.css
+* Owner: rcbytes
+* Source: http://bootsnipp.com/snippets/featured/stylish-input-using-icon-font
+* Purpose: Search Box CSS
+* Versions
+*   User     |       Date       |            Description              |
+*   Alex     |    06/09/2016    | Added to repo - Modified as needed  |
+**/
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
