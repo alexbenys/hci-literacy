@@ -65,6 +65,5 @@
                  alt="Microphone Icon">
         </div>
     </div>
-
     
 @endsection
