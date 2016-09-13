@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    <small>version 0.0.1</small>
     <nav>
 
     </nav>

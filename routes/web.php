@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('pages.index');
 });
+
+Route::get('test', function () {
+    return view('pages.test');
+});
+
+
+Route::get('test', function () {
+    return view('pages.test');
+});
+
+Route::get('weather',
+    [
+        'as' => 'weather',
+        'uses' => 'WeatherController@index'
+    ]);
+
