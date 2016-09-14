@@ -7,21 +7,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 use App\Http\Requests;
 use Nwidart\ForecastPhp\Forecast;
 
 class WeatherController extends Controller
 {
-    public function getWeather() {
+    public function storeWeather() {
+        $data = Input::get();
+        $lat = $data['latitude'];
+        $lon = $data['longitude'];
+
+        $forecast = $this->getWeather($lat, $lon);
+
+        Session::put('timezone', $forecast->timezone);
+
+//        return view('pages.weather', compact('forecast'));
+        return Redirect::to(route('displayWeather'));
+    }
+
+    public function getWeather($lat, $lon) {
+
         $forecast = new Forecast(env('FORECAST_API'));
-        $forecast = $forecast->get('40.7324296', '-73.9977264');
+        $forecast = $forecast->get($lat, $lon);
+
         return $forecast;
     }
 
     public function index() {
-        $currentWeather = $this->getWeather();
-        dd($currentWeather);
         return view('pages.weather');
     }
 

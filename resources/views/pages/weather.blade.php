@@ -15,7 +15,14 @@
 
 @section('content')
     <div class="container-fluid">
-        <h1>Hey</h1>
+        <img src="{{ asset('images/weather-1.png') }}"
+             class="img-thumbnail"
+             width=30%"
+             alt="Weather Icon">
+
+        <div>{{ $timezone }}</div>
     </div>
+
+
 
 @endsection

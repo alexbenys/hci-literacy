@@ -11,22 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-
-Route::get('test', function () {
-    return view('pages.test');
-});
+Route::get('/',
+    [
+        'as' => 'home',
+        'uses' => 'PagesController@index'
+    ]);
 
 
 Route::get('test', function () {
     return view('pages.test');
 });
+
+
+Route::post('/', [
+    'as' => 'storeWeather',
+    'uses' => 'WeatherController@storeWeather'
+]);
 
 Route::get('weather',
     [
-        'as' => 'weather',
+        'as' => 'displayWeather',
         'uses' => 'WeatherController@index'
     ]);
 

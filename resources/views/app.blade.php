@@ -17,7 +17,7 @@
     @yield('js')
 
 </head>
-<body>
+<body onload="getLocation()">
     <small>version 0.0.1</small>
     <nav>
 

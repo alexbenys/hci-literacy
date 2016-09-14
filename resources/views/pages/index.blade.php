@@ -67,9 +67,39 @@
     </div>
     
     <div class="container-fluid">
-        <a href="http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b5a8f7f2c6b30f1f9896f22374c59155">
-            Hey
-        </a>
+        <h1 class="text-center">Your location:</h1>
+        <div class="text-center">
+            <p id="demo"></p>
+        </div>
+
+        <div>
+            <form method="POST">
+                <input id="latitude" type="hidden" name="latitude" value="">
+                <input id="longitude" type="hidden" name="longitude" value="">
+                <input class="btn btn-primary" type="submit" value="Weather">
+            </form>
+        </div>
     </div>
 
+@endsection
+
+@section('pageSpecificJS')
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            document.getElementById('latitude').value = position.coords.latitude;
+            document.getElementById('longitude').value = position.coords.longitude;
+        }
+    </script>
 @endsection
