@@ -4,6 +4,8 @@ weather-1.png - http://www.freeiconspng.com/uploads/weather-icon-png-16.png
 news-1.png - http://www.freeiconspng.com/uploads/news-icon-19.png
 hospital-1.ico - http://www.iconarchive.com/show/ios7-icons-by-icons8/Healthcare-Hospital-3-icon.html
 hospital-2.ico - http://www.iconarchive.com/show/windows-8-icons-by-icons8/Healthcare-Hospital-3-icon.html
+left-arrow.ico - http://www.iconarchive.com/show/windows-8-icons-by-icons8/Arrows-Left-Circular-icon.html
+right-arrow.ico
 
 
 APIs

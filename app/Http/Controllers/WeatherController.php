@@ -23,10 +23,10 @@ class WeatherController extends Controller
 
         $forecast = $this->getWeather($lat, $lon);
 
-        Session::put('timezone', $forecast->timezone);
 
-//        return view('pages.weather', compact('forecast'));
-        return Redirect::to(route('displayWeather'));
+        Session::put('forecast', $forecast);
+
+        return redirect()->route('displayWeather');
     }
 
     public function getWeather($lat, $lon) {

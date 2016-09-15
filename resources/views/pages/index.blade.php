@@ -73,11 +73,18 @@
         </div>
 
         <div>
-            <form method="POST">
+            {!! Form::open(array(
+                'role' => 'form',
+                'url' => '/'
+            )) !!}
+
                 <input id="latitude" type="hidden" name="latitude" value="">
                 <input id="longitude" type="hidden" name="longitude" value="">
-                <input class="btn btn-primary" type="submit" value="Weather">
-            </form>
+                <div class="text-center">
+                    <input class="btn btn-default btn-lg" type="submit" value="Weather">
+                </div>
+
+            {!! Form::close() !!}
         </div>
     </div>
 
@@ -85,21 +92,50 @@
 
 @section('pageSpecificJS')
     <script>
+        {{--Store location in a session--}}
+
+//        function storeLocation() {
+//            $loc = navigator.geolocation.getCurrentPosition();
+//        }
+
+//        console.log(navigator.geolocation.getCurrentPosition(successHandler));
+
         var x = document.getElementById("demo");
 
         function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(successHandler);
             } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
+                x.innerHTML = "Geolocation is not supported by this browser";
             }
         }
 
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-                    "<br>Longitude: " + position.coords.longitude;
+        function successHandler(position) {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+            accuracy = position.coords.accuracy;
+
             document.getElementById('latitude').value = position.coords.latitude;
             document.getElementById('longitude').value = position.coords.longitude;
         }
+
+
+
+//        var x = document.getElementById("demo");
+
+//        function getLocation() {
+//            if (navigator.geolocation) {
+//                navigator.geolocation.getCurrentPosition(showPosition);
+//            } else {
+//                x.innerHTML = "Geolocation is not supported by this browser.";
+//            }
+//        }
+//
+//        function showPosition(position) {
+//            x.innerHTML = "Latitude: " + position.coords.latitude +
+//                    "<br>Longitude: " + position.coords.longitude;
+//            document.getElementById('latitude').value = position.coords.latitude;
+//            document.getElementById('longitude').value = position.coords.longitude;
+//        }
     </script>
 @endsection

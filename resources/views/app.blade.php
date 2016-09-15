@@ -25,7 +25,7 @@
 
     @yield('content')
 
-    <footer>
+    <footer style="margin-top: 20px;">
         <div class="text-center">
             <a href="#">Source Log</a> |
             <a href="http://www.anu.edu.au/">Australian National University</a> |
