@@ -47,11 +47,32 @@
         <h2>Your timezone:</h2>
         <h3>{{ Session::get('forecast')['timezone'] }}</h3>
 
+        <hr>
+
         <h2>Your current weather:</h2>
-        <h2>{{ Session::get('forecast')['currently']['temperature'] }} F</h2>
+        <h2>{{ Session::get('forecast')['currently']['temperature'] }} C</h2>
         <h3>{{ Session::get('forecast')['currently']['summary'] }}</h3>
 
+        <hr>
+
         <h2>Your weekly weather:</h2>
+        <div class="row">
+            @for ($i = 0; $i < 7; $i++)
+            <div class="col-md-push-2 col-md-1">
+                <div>
+                    {{ Session::get('forecast')['daily']['data'][$i]['time'] }}
+                </div>
+                <div>{{ Session::get('forecast')['daily']['data'][$i]['summary'] }}</div>
+                <div>{{ Session::get('forecast')['daily']['data'][$i]['icon'] }}</div>
+                <div class="col-md-6">
+                    {{ Session::get('forecast')['daily']['data'][$i]['temperatureMin'] }}
+                </div>
+                <div class="col-md-6">
+                    {{ Session::get('forecast')['daily']['data'][$i]['temperatureMax'] }}
+                </div>
+            </div>
+            @endfor
+        </div>
         <h3></h3>
     </div>
 

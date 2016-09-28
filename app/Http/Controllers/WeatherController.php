@@ -6,10 +6,13 @@
 
 namespace App\Http\Controllers;
 
+use Faker\Provider\DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
+use Carbon\Carbon;
+
 
 use App\Http\Requests;
 use Nwidart\ForecastPhp\Forecast;
@@ -23,8 +26,8 @@ class WeatherController extends Controller
 
         $forecast = $this->getWeather($lat, $lon);
 
-
         Session::put('forecast', $forecast);
+
 
         return redirect()->route('displayWeather');
     }
@@ -32,7 +35,7 @@ class WeatherController extends Controller
     public function getWeather($lat, $lon) {
 
         $forecast = new Forecast(env('FORECAST_API'));
-        $forecast = $forecast->get($lat, $lon);
+        $forecast = $forecast->setOptions(['units' => 'si'])->get($lat, $lon);
 
         return $forecast;
     }
