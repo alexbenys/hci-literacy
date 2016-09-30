@@ -22,17 +22,23 @@
                  width="10%"
                  alt="News Icon">
         </a>
-        <a href="#">
-            <img src="{{ asset('images/weather-1.png') }}"
+        <a href="{{ route('displayMarket') }}">
+            <img src="{{ asset('images/market-1.jpg') }}"
                  class="img-thumbnail"
                  width="10%"
-                 alt="Weather Icon">
+                 alt="Market Icon">
         </a>
         <a href="https://www.google.com.au/maps/search/hospital/@-35.317248,149.1443635,15z/data=!3m1!4b1">
             <img src="{{ asset('images/hospital-2.ico') }}"
                  class="img-thumbnail"
                  width="10%"
                  alt="Hospital Icon">
+        </a>
+        <a href="{{ route('displayWeather') }}">
+            <img src="{{ asset('images/weather-1.png') }}"
+                 class="img-thumbnail"
+                 width="10%"
+                 alt="Weather Icon">
         </a>
     </div>
 

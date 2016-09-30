@@ -28,9 +28,15 @@ Route::post('/', [
     'uses' => 'WeatherController@storeWeather'
 ]);
 
-Route::get('weather',
-    [
+Route::get('weather', [
         'as' => 'displayWeather',
         'uses' => 'WeatherController@index'
-    ]);
+]);
+
+Route::get('market', [
+    'as' => 'displayMarket',
+    'uses' => 'PagesController@getMarket'
+]);
+
+
 

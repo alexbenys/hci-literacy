@@ -5,8 +5,9 @@ news-1.png - http://www.freeiconspng.com/uploads/news-icon-19.png
 hospital-1.ico - http://www.iconarchive.com/show/ios7-icons-by-icons8/Healthcare-Hospital-3-icon.html
 hospital-2.ico - http://www.iconarchive.com/show/windows-8-icons-by-icons8/Healthcare-Hospital-3-icon.html
 left-arrow.ico - http://www.iconarchive.com/show/windows-8-icons-by-icons8/Arrows-Left-Circular-icon.html
-right-arrow.ico
-
+market-1.jpg - http://previews.123rf.com/images/keath/keath1506/keath150600048/41837621-Market-cart-icon-vector-illustration-Stock-Vector.jpg
+market-2.png - https://cdn4.iconfinder.com/data/icons/business-soft/512/market_seller-512.png
+market-3.png - https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/market_stand.png
 
 APIs
 weather - https://packagist.org/packages/nwidart/laravel-forecast, https://github.com/nWidart/forecast-php
