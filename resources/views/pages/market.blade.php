@@ -42,8 +42,86 @@
         </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
         <h1>Select items</h1>
+        <div class="lead">
+            Touch and hold to hear description
+        </div>
 
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/cabbage-1.png') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Cabbage Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/green-chilli-1.png') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Chilli Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Chilli Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/spinach-1.jpg') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Spinach Icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/tomato-1.jpg') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Cabbage Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/green-chilli-1.png') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Chilli Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Chilli Icon">
+                </a>
+            </div>
+
+            <div class="col-md-push-2 col-md-2">
+                <a href="#">
+                    <img src="{{ asset('images/agriculture/spinach-1.jpg') }}"
+                         class="img-thumbnail"
+                         width="60%"
+                         alt="Spinach Icon">
+                </a>
+            </div>
+        </div>
     </div>
 @endsection

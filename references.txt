@@ -9,5 +9,37 @@ market-1.jpg - http://previews.123rf.com/images/keath/keath1506/keath150600048/4
 market-2.png - https://cdn4.iconfinder.com/data/icons/business-soft/512/market_seller-512.png
 market-3.png - https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/market_stand.png
 
+AGRICULTURAL ICONS
+spinach-1.jpg - http://www.buyfruit.com.au/images/P/English_Spinach__67562.jpg
+red-chilli-1.png - http://www.clipartpanda.com/clipart_images/chili-clip-art-20036039
+green-chilli-1.png - http://www.theditchon40.com/app/media/icons/iconGreenChile.png
+green-chilli-2.jpg - http://images.all-free-download.com/images/graphicthumb/green_pepper_310463.jpg
+green-chilli-3.jpg - http://us.123rf.com/450wm/ideation90/ideation901607/ideation90160700115/60505479-green-pepper-green-chilli.jpg?ver=6
+cabbage-1.png - http://www.rw-designer.com/icon-detail/9028
+cabbage-2.jpg - http://previews.123rf.com/images/izakowski/izakowski1109/izakowski110900008/10746487-cartoon-Illustration-of-green-cabbage-Stock-Vector-lettuce.jpg
+tomato-1.jpg -http://vectorboom.com/TUTORIALS/Tomato/0.jpg
+kangkung-1.jpg - https://dinmerican.files.wordpress.com/2014/01/wat-is-kangkung.jpg
+peanut-1.jpg - http://img.freepik.com/free-photo/peanuts_2675902.jpg?size=338&ext=jpg
+peanut-2.jpg - http://carriebrown.com/wp-content/uploads/2015/09/24-29920-post/peanut.jpg
+corn-1.jpg - http://vignette3.wikia.nocookie.net/creepypasta/images/7/7b/Corn.jpg/revision/latest?cb=20131128223759
+corn-2.png - http://images.clipartpanda.com/corn-clipart-Corn-clip-art-at-vector-clip-art-free-3-2.png
+choko-1.png - http://www.vegetables.co.nz/assets/vegetables/_resampled/FillWyI0MDAiLCIzMDAiXQ-chokos.png
+choko-2.jpg - http://www.cyberfresh.com.au/eshop/images/P/Choko.JPG
+cucumber-1.jpg - http://www.livescience.com/images/i/000/076/219/original/cucumbers.jpg?interpolation=lanczos-none&downsize=*:1000
+cucumber-2.jpg - http://www.nairaland.com/attachments/3833673_cucmber_jpeg982327bf4d8b40a394bd1067451138ea
+cucumber-3.jpg - https://australianseed.com/persistent/catalogue_images/products/cucumber-muncher.jpg
+ginger-1.jpg - https://www.ou.org/life/files/Ginger1.jpg
+tumeric-1.jpg - https://authoritynutrition.com/wp-content/uploads/2014/03/a-pile-of-fresh-turmeric-roots.jpg
+garlic-1.jpg - http://tlvz.com/en/wp-content/uploads/2015/08/GarlicCloves.jpg
+shallots-1.jpg - http://produceoasis.com/Uploads/shallots.jpg
+spring-onion-1.jpg - http://dcartt.com/img/p/6/6/66.jpg
+singkong-1jpg - http://www.mori.co.id/wp-content/uploads/2014/10/Asal-Mula-Singkong-2.jpg
+singkong-2 - http://ibudanmama.com/wp-content/uploads/2014/12/5-Manfaat-Singkong-Bagi-Ibu-Hamil-dan-Janin.jpg
+daun-singkong-1 - http://wartakesehatan.com/uploads/content/2016/7/Daun%20Singkong.jpg
+daun-singkong-2 - https://www.dapurumami.com/img/tips/14.jpg
+kacang-panjang-1 - http://manfaat.co.id/wp-content/uploads/2014/08/kacang-panjang.jpg
+kacang-panjang-2 - http://www.buahunik.com/wp-content/uploads/2015/03/kacang-panjang.png
+
+
 APIs
 weather - https://packagist.org/packages/nwidart/laravel-forecast, https://github.com/nWidart/forecast-php
