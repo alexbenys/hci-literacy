@@ -77,11 +77,11 @@
             </div>
 
             <div class="col-md-push-2 col-md-2">
-                <a href="#">
-                    <img src="{{ asset('images/agriculture/spinach-1.jpg') }}"
+                <a href="{{ route('displayGarlic') }}">
+                    <img src="{{ asset('images/agriculture/garlic-1.jpg') }}"
                          class="img-thumbnail"
                          width="60%"
-                         alt="Spinach Icon">
+                         alt="Garlic Icon">
                 </a>
             </div>
         </div>
@@ -92,34 +92,34 @@
                     <img src="{{ asset('images/agriculture/tomato-1.jpg') }}"
                          class="img-thumbnail"
                          width="60%"
-                         alt="Cabbage Icon">
+                         alt="Tomato Icon">
                 </a>
             </div>
 
             <div class="col-md-push-2 col-md-2">
                 <a href="#">
-                    <img src="{{ asset('images/agriculture/green-chilli-1.png') }}"
+                    <img src="{{ asset('images/agriculture/cucumber-3.jpg') }}"
                          class="img-thumbnail"
                          width="60%"
-                         alt="Chilli Icon">
+                         alt="Cucumber Icon">
                 </a>
             </div>
 
             <div class="col-md-push-2 col-md-2">
                 <a href="#">
-                    <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
+                    <img src="{{ asset('images/agriculture/ginger-1.jpg') }}"
                          class="img-thumbnail"
                          width="60%"
-                         alt="Chilli Icon">
+                         alt="Ginger Icon">
                 </a>
             </div>
 
             <div class="col-md-push-2 col-md-2">
                 <a href="#">
-                    <img src="{{ asset('images/agriculture/spinach-1.jpg') }}"
+                    <img src="{{ asset('images/agriculture/shalots-1.jpg') }}"
                          class="img-thumbnail"
                          width="60%"
-                         alt="Spinach Icon">
+                         alt="Shalots Icon">
                 </a>
             </div>
         </div>

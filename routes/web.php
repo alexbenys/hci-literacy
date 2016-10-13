@@ -38,5 +38,10 @@ Route::get('market', [
     'uses' => 'PagesController@getMarket'
 ]);
 
+Route::get('garlic', [
+    'as' => 'displayGarlic',
+    'uses' => 'PagesController@getGarlic'
+]);
+
 
 

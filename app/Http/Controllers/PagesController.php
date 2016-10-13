@@ -15,4 +15,9 @@ class PagesController extends Controller
     public function getMarket() {
         return view('pages.market');
     }
+
+    public function getGarlic()
+    {
+        return view('market.garlic');
+    }
 }
