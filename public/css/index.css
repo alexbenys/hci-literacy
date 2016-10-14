@@ -11,3 +11,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+#voice-input-button:hover {
+    border: solid black 1px;
+}

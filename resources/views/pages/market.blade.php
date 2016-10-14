@@ -21,7 +21,7 @@
                     <a href="{{ URL::previous() }}">
                         <img src="{{ asset('images/left-arrow.ico') }}"
                              style="top:50%;"
-                             width=25%"
+                             width="25%"
                              alt="Weather Icon">
                     </a>
                 </div>
@@ -53,7 +53,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/cabbage-1.png') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Cabbage Icon">
                 </a>
             </div>
@@ -71,7 +71,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Chilli Icon">
                 </a>
             </div>
@@ -80,7 +80,7 @@
                 <a href="{{ route('displayGarlic') }}">
                     <img src="{{ asset('images/agriculture/garlic-1.jpg') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Garlic Icon">
                 </a>
             </div>
@@ -91,7 +91,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/tomato-1.jpg') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Tomato Icon">
                 </a>
             </div>
@@ -100,7 +100,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/cucumber-3.jpg') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Cucumber Icon">
                 </a>
             </div>
@@ -109,7 +109,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/ginger-1.jpg') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Ginger Icon">
                 </a>
             </div>
@@ -118,7 +118,7 @@
                 <a href="#">
                     <img src="{{ asset('images/agriculture/shalots-1.jpg') }}"
                          class="img-thumbnail"
-                         width="60%"
+                         width="100%"
                          alt="Shalots Icon">
                 </a>
             </div>
