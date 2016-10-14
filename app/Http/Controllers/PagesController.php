@@ -12,6 +12,11 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
+    public function getNews()
+    {
+        return view('mockup-news.government-news');
+    }
+
     public function getMarket() {
         return view('pages.market');
     }

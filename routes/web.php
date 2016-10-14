@@ -22,6 +22,11 @@ Route::get('test', function () {
     return view('pages.test');
 });
 
+Route::get('news', [
+    'as' => 'displayNews',
+    'uses' => 'PagesController@getNews'
+]);
+
 
 Route::post('/', [
     'as' => 'storeWeather',

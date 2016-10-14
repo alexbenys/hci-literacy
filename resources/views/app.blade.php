@@ -1,3 +1,12 @@
+<!--
+* File: app.blade.php
+* Owner: Alex Simangunsong
+* Purpose: Master page for front end
+* Versions
+*   User    |       Date       |            Description              |
+*   Alex    |    06/09/2016    | Developed                           |
+!-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

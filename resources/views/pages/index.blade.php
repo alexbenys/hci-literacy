@@ -18,7 +18,7 @@
     <div class="container-fluid text-center top-tiles row">
         <div class="col-xs-2 col-sm-2 col-md-2"></div>
         <div class="col-xs-2 col-sm-2 col-md-2">
-            <a href="#">
+            <a href="{{ route('displayNews') }}">
                 <img src="{{ asset('images/news-1.png') }}"
                      class="img-thumbnail"
                      width="70%"
