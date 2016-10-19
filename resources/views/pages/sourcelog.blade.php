@@ -1,3 +1,12 @@
+<!--
+* File: index.blade.php
+* Owner: Alex Simangunsong
+* Purpose: Source Log page
+* Versions
+*   User    |       Date       |            Description              |
+*   Alex    |    19/10/2016    | Developed                           |
+!-->
+
 @extends('app')
 
 @section('css')@endsection
