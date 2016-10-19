@@ -25,6 +25,9 @@
 @endsection
 
 @section('pageSpecificJS')
+    {{--Voice API--}}
+    <script src='//vws.responsivevoice.com/v/e?key=jNbO27u7'></script>
+
     <script>
         var map;
         var infowindow;

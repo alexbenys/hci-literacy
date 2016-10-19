@@ -12,6 +12,13 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/search-box.css') }}">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+
+    <style>
+        #myModal{
+            top:30%;
+            outline: none;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -89,20 +96,15 @@
         <div class="text-center">
             <div class="row">
                 <div>
-                    {!! Form::open(array(
-                        'role' => 'form',
-                        'url' => '/'
-                    )) !!}
-
                     <input id="latitude" type="hidden" name="latitude" value="">
                     <input id="longitude" type="hidden" name="longitude" value="">
                     <div class="text-center">
-                        <input class="btn btn-default btn-lg"
+                        <input class="btn btn-default btn-lg" id="speak"
+                               data-toggle="modal" data-target="#myModal"
                                type="image" width="15%"
+                               style="background-color: rgba(255,0,0,0.5);"
                                src="{{ asset('images/speaking-1.png') }}" alt="Submit">
                     </div>
-
-                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
@@ -114,14 +116,33 @@
         {{--<div class="text-center">--}}
             {{--<p id="demo"></p>--}}
         {{--</div>--}}
-
-
     {{--</div>--}}
+
+    {{--Modal--}}
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header text-left">
+                    <br><br>
+                    <h2 class="modal-title">Please speak now<span id="wait">.</span></h2>
+                    <br><br>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection
 
 @section('pageSpecificJS')
-    <script src='//vws.responsivevoice.com/v/e?key=emK6gmzg'></script>
+    {{--ID--}}
+    {{--<script src='//vws.responsivevoice.com/v/e?key=pfqsv23B'></script>--}}
+
+    {{--EN--}}
+
 
     <script>
         var x = document.getElementById("demo");
@@ -142,5 +163,38 @@
             document.getElementById('latitude').value = position.coords.latitude;
             document.getElementById('longitude').value = position.coords.longitude;
         }
+    </script>
+
+    {{--Wait animation--}}
+    <script>
+        var dots = window.setInterval( function() {
+            var wait = document.getElementById("wait");
+            if ( wait.innerHTML.length > 3 )
+                wait.innerHTML = "";
+            else
+                wait.innerHTML += ".";
+        }, 500);
+    </script>
+
+
+    {{--Redirect to search page--}}
+    {{--<script>--}}
+        {{--$(document).ready(function () {--}}
+            {{--window.setTimeout(function () {--}}
+                {{--location.href = "https://www.google.com.au";--}}
+            {{--}, 5000);--}}
+        {{--});--}}
+    {{--</script>--}}
+
+    <script>
+        $('#speak').click (function (e) {
+            e.preventDefault(); //will stop the link href to call the blog page
+
+            setTimeout(function () {
+                {{--window.location.href = "{{ route('displayNews') }}";--}}
+                window.location.href = "{{ route('displayWeather') }}";
+            }, 5000);
+
+        });
     </script>
 @endsection
