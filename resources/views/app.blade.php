@@ -27,7 +27,7 @@
 
 </head>
 <body onload="getLocation()">
-    <small>version 0.0.1</small>
+    <small><a href="/">version 0.0.1</a></small>
     <nav>
 
     </nav>
@@ -36,7 +36,7 @@
 
     <footer style="margin-top: 20px;">
         <div class="text-center">
-            <a href="#">Source Log</a> |
+            <a href="{{ route('displaySourceLog') }}">Source Log</a> |
             <a href="http://www.anu.edu.au/">Australian National University</a> |
             <a href="#">Contact Me</a>
         </div>

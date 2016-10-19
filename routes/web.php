@@ -48,5 +48,10 @@ Route::get('garlic', [
     'uses' => 'PagesController@getGarlic'
 ]);
 
+Route::get('source-log', [
+    'as' => 'displaySourceLog',
+    'uses' => 'PagesController@getSourceLog'
+]);
+
 
 

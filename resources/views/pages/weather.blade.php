@@ -50,6 +50,9 @@
         <hr>
 
         <h2>Your current weather:</h2>
+        <img src="{{ asset('images/weather/') }}/{{ Session::get('forecast')['currently']['icon'] }}.jpg"
+             alt="Current weather icon - {{ Session::get('forecast')['currently']['icon'] }}"
+             width="10%">
         <h2>{{ Session::get('forecast')['currently']['temperature'] }} C</h2>
         <h3>{{ Session::get('forecast')['currently']['summary'] }}</h3>
 
@@ -60,10 +63,20 @@
             @for ($i = 0; $i < 7; $i++)
             <div class="col-md-push-2 col-md-1">
                 <div>
-                    {{ Session::get('forecast')['daily']['data'][$i]['time'] }}
+                    <h2>
+                        {{ gmdate("D", Session::get('forecast')['daily']['data'][$i]['time']) }}
+                    </h2>
+
                 </div>
-                <div>{{ Session::get('forecast')['daily']['data'][$i]['summary'] }}</div>
+                <div>
+                    <img src="{{ asset('images/weather/') }}/{{ Session::get('forecast')['daily']['data'][$i]['icon'] }}.jpg"
+                         alt="Current weather icon - {{ Session::get('forecast')['daily']['data'][$i]['icon'] }}"
+                         width="80%">
+                </div>
+                {{--<div>{{ Session::get('forecast')['daily']['data'][$i]['summary'] }}</div>--}}
                 <div>{{ Session::get('forecast')['daily']['data'][$i]['icon'] }}</div>
+
+
                 <div class="col-md-6">
                     {{ Session::get('forecast')['daily']['data'][$i]['temperatureMin'] }}
                 </div>

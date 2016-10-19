@@ -32,6 +32,8 @@ class WeatherController extends Controller
         return redirect()->route('displayWeather');
     }
 
+
+
     public function getWeather($lat, $lon) {
 
         $forecast = new Forecast(env('FORECAST_API'));

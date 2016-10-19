@@ -25,4 +25,9 @@ class PagesController extends Controller
     {
         return view('market.garlic');
     }
+
+    public function getSourceLog()
+    {
+        return view('pages.sourcelog');
+    }
 }
