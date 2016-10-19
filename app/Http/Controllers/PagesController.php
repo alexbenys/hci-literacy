@@ -30,4 +30,9 @@ class PagesController extends Controller
     {
         return view('pages.sourcelog');
     }
+
+    public function getHospital()
+    {
+        return view('pages.hospital');
+    }
 }

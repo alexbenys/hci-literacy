@@ -54,4 +54,8 @@ Route::get('source-log', [
 ]);
 
 
+Route::get('hospital', [
+    'as' => 'displayHospital',
+    'uses' => 'PagesController@gethospital'
+]);
 

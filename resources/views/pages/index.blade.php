@@ -36,7 +36,7 @@
         </div>
 
         <div class="col-xs-2 col-sm-2 col-md-2">
-            <a href="https://www.google.com.au/maps/search/hospital/@-35.317248,149.1443635,15z/data=!3m1!4b1">
+            <a href="{{ route('displayHospital') }}">
                 <img src="{{ asset('images/hospital-2.ico') }}"
                      class="img-thumbnail"
                      width="70%"
@@ -107,6 +107,7 @@
             </div>
         </div>
     </div>
+
     
     {{--<div class="container-fluid">--}}
         {{--<h1 class="text-center">Your location:</h1>--}}
@@ -120,6 +121,8 @@
 @endsection
 
 @section('pageSpecificJS')
+    <script src='//vws.responsivevoice.com/v/e?key=emK6gmzg'></script>
+
     <script>
         var x = document.getElementById("demo");
 
