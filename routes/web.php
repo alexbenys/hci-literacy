@@ -59,3 +59,8 @@ Route::get('hospital', [
     'uses' => 'PagesController@gethospital'
 ]);
 
+Route::get('voice', [
+    'as' => 'displayVoice',
+    'uses' => 'PagesController@getVoice'
+]);
+

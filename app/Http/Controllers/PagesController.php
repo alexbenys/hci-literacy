@@ -35,4 +35,9 @@ class PagesController extends Controller
     {
         return view('pages.hospital');
     }
+
+    public function getVoice()
+    {
+        return view('pages.voice');
+    }
 }
