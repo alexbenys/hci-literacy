@@ -33,6 +33,11 @@ Route::post('/', [
     'uses' => 'WeatherController@storeWeather'
 ]);
 
+Route::post('/voice', [
+    'as' => 'storeVoice',
+    'uses' => 'VoiceController@storeVoice'
+]);
+
 Route::get('weather', [
         'as' => 'displayWeather',
         'uses' => 'WeatherController@index'

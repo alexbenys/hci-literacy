@@ -25,10 +25,13 @@
     {{--Additional JS Files--}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     @yield('js')
 
 </head>
-<body onload="getLocation()">
+{{--<body onload="getLocation()">--}}
+<body onload="@yield('onLoadFunction')">
     <small><a href="/">version 0.0.1</a></small>
     <nav>
 
