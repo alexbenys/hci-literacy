@@ -285,14 +285,22 @@
         function indexLoadFunctions() {
             getLocation();
 
-            var text =
+            var textEN =
+                    "Welcome to voice services; Press the red button to speak; or click on the desired menu at the top of the screen." +
+                    "Say 'weather' to check the current weather." +
+                    "Say 'market' to see the prices of items displayed in local markets. " +
+                    "Say 'news' to access current news from the government." +
+                    "Say 'hospital' to see health providers around you.";
+            var textID =
                     "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
                     "Menu satu, berita; Menu dua, cek harga bahan pangan; Menu tiga, cek layanan kesehatan terdekat. " +
                     "Menu empat, cek prakiraan cuaca.";
 
             setTimeout(function() {
                 console.log("Launching welcome message" );
-                responsiveVoice.speak(text,'Indonesian Female');
+                responsiveVoice.speak(textEN,'US English Female');
+//                responsiveVoice.speak(textEN,'Australian Female');
+//                responsiveVoice.speak(textID,'Indonesian Female');
             },500);
         }
     </script>

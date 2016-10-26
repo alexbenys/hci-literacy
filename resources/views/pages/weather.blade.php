@@ -60,11 +60,11 @@
 
         <h2>Your weekly weather:</h2>
         <div class="row">
-            @for ($i = 0; $i < 7; $i++)
-            <div class="col-md-push-2 col-md-1">
+            @for ($i = 2; $i < 7; $i++)
+            <div class="col-md-push-3 col-md-1">
                 <div>
                     <h2>
-                        {{ gmdate("D", Session::get('forecast')['daily']['data'][$i]['time']) }}
+                        {{ gmdate("Dd", Session::get('forecast')['daily']['data'][$i]['time']) }}
                     </h2>
 
                 </div>
