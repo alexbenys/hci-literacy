@@ -286,7 +286,7 @@
             getLocation();
 
             var textEN =
-                    "Welcome to voice services; Press the red button to speak; or click on the desired menu at the top of the screen." +
+                    "Welcome to voice services; Press the red button to speak, or click on the desired menu at the top of the screen." +
                     "Say 'weather' to check the current weather." +
                     "Say 'market' to see the prices of items displayed in local markets. " +
                     "Say 'news' to access current news from the government." +
@@ -298,8 +298,9 @@
 
             setTimeout(function() {
                 console.log("Launching welcome message" );
+//                responsiveVoice.speak(textEN,'UK English Male');
                 responsiveVoice.speak(textEN,'US English Female');
-//                responsiveVoice.speak(textEN,'Australian Female');
+//                responsiveVoice.speak(textEN,'French Female');
 //                responsiveVoice.speak(textID,'Indonesian Female');
             },500);
         }

@@ -9,6 +9,10 @@
 
 @extends('app')
 
+@section('onLoadFunction')
+    weatherLoadFunctions()
+@endsection
+
 @section('css')
 
 @endsection
@@ -60,23 +64,32 @@
 
         <h2>Your weekly weather:</h2>
         <div class="row">
-            @for ($i = 2; $i < 7; $i++)
-            <div class="col-md-push-3 col-md-1">
+            @for ($i = 1; $i < 7; $i++)
+            <div class="col-md-2">
                 <div>
                     <h2>
-                        {{ gmdate("Dd", Session::get('forecast')['daily']['data'][$i]['time']) }}
+                        {{ gmdate("D", Session::get('forecast')['daily']['data'][$i]['time']) }}
                     </h2>
+                    <h4>
+                        {{ gmdate("d M", Session::get('forecast')['daily']['data'][$i]['time']) }}
+                    </h4>
 
                 </div>
                 <div>
                     <img src="{{ asset('images/weather/') }}/{{ Session::get('forecast')['daily']['data'][$i]['icon'] }}.jpg"
                          alt="Current weather icon - {{ Session::get('forecast')['daily']['data'][$i]['icon'] }}"
-                         width="80%">
+                         width="60%">
                 </div>
                 {{--<div>{{ Session::get('forecast')['daily']['data'][$i]['summary'] }}</div>--}}
                 <div>{{ Session::get('forecast')['daily']['data'][$i]['icon'] }}</div>
 
+                <div class="col-md-6">
+                    Min
+                </div>
 
+                <div class="col-md-6">
+                    Max
+                </div>
                 <div class="col-md-6">
                     {{ Session::get('forecast')['daily']['data'][$i]['temperatureMin'] }}
                 </div>
@@ -94,5 +107,26 @@
 @endsection
 
 @section('pageSpecificJS')
-    <script src='//vws.responsivevoice.com/v/e?key=mYdpcjaU'></script>
+    {{--<script src='//vws.responsivevoice.com/v/e?key=mYdpcjaU'></script>--}}
+
+    <script>
+        function weatherLoadFunctions() {
+
+            var textEN =
+                    "Here is the weather forecast for today. The current temperature is 20 degree celsius." +
+                    "Click the button below to find out the weather forecast for the next few days, " +
+                    "or click on the arrow to go to the previous menu";
+            var textID =
+                    "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
+                    "Menu satu, berita; Menu dua, cek harga bahan pangan; Menu tiga, cek layanan kesehatan terdekat. " +
+                    "Menu empat, cek prakiraan cuaca.";
+
+            setTimeout(function() {
+                console.log("Launching welcome message" );
+//                responsiveVoice.speak(textEN,'UK English Male');
+                responsiveVoice.speak(textEN,'US English Female');
+//                responsiveVoice.speak(textID,'Indonesian Female');
+            },500);
+        }
+    </script>
 @endsection
