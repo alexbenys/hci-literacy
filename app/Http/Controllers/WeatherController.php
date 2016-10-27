@@ -37,7 +37,7 @@ class WeatherController extends Controller
     public function getWeather($lat, $lon) {
 
         $forecast = new Forecast(env('FORECAST_API'));
-        $forecast = $forecast->setOptions(['units' => 'si'])->get($lat, $lon);
+        $forecast = $forecast->setOptions(['units' => 'si', 'lang' => 'id'])->get($lat, $lon);
 
         return $forecast;
     }

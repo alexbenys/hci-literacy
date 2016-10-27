@@ -9,6 +9,10 @@
 
 @extends('app')
 
+@section('onLoadFunction')
+    garlicLoadFunctions()
+@endsection
+
 @section('css')
 
 @endsection
@@ -48,11 +52,32 @@
                 </div>
 
                 <div class="col-md-push-3 col-md-4">
-                    <h2>Garlic</h2>
-                    <h3>Price: <h2 style="color: red;">Rp 39.000</h2></h3>
-                    <a href="#" class="btn btn-lg btn-primary">Buy Now</a>
+                    <h2>Bawang Putih</h2>
+                    <h3>Harga: <h2 style="color: red;">Rp 39.000</h2></h3>
+                    <a href="#" class="btn btn-lg btn-primary">Dimana membelinya?</a>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@section('pageSpecificJS')
+
+    <script>
+        function garlicLoadFunctions() {
+
+            var textEN =
+                    "";
+            var textID = "Harga bawang putih hari ini: tiga puluh sembilan ribu rupiah per kilogram;" +
+                    "Anda dapat menekan tombol biru untuk melihat lokasi penjual bawang putih terdekat, atau " +
+                    " tekan tombol panah untuk melihat harga bahan pangan lainnya.";
+
+            setTimeout(function() {
+                console.log("Launching welcome message" );
+//                responsiveVoice.speak(textEN,'UK English Male');
+//                responsiveVoice.speak(textEN,'US English Female');
+                responsiveVoice.speak(textID,'Indonesian Female');
+            },500);
+        }
+    </script>
 @endsection

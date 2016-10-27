@@ -111,59 +111,61 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid text-center top-tiles row">
-        <div class="col-xs-2 col-sm-2 col-md-2"></div>
-        <div class="col-xs-2 col-sm-2 col-md-2">
-            <a href="{{ route('displayNews') }}">
-                <img src="{{ asset('images/news-1.png') }}"
-                     class="img-thumbnail"
-                     width="70%"
-                     alt="News Icon">
-            </a>
-        </div>
-
-        <div class="col-xs-2 col-sm-2 col-md-2">
-            <a href="{{ route('displayMarket') }}">
-                <img src="{{ asset('images/market-1.jpg') }}"
-                     class="img-thumbnail"
-                     width="70%"
-                     alt="Market Icon">
-            </a>
-        </div>
-
-        <div class="col-xs-2 col-sm-2 col-md-2">
-            <a href="{{ route('displayHospital') }}">
-                <img src="{{ asset('images/hospital-2.ico') }}"
-                     class="img-thumbnail"
-                     width="70%"
-                     alt="Hospital Icon">
-            </a>
-        </div>
-
-        <div class="col-xs-2 col-sm-2 col-md-2">
-            {!! Form::open(array(
-                'role' => 'form',
-                'url' => '/'
-            )) !!}
-
-            <input id="latitude" type="hidden" name="latitude" value="">
-            <input id="longitude" type="hidden" name="longitude" value="">
-            <div class="text-center">
-                <input class="btn btn-default btn-lg"
-                       type="image" width="75%"
-                       src="{{ asset('images/weather-1.png') }}" alt="Submit">
+    <div class="text-center top-tiles" style="">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <a href="{{ route('displayNews') }}">
+                    <img src="{{ asset('images/news-1.png') }}"
+                         class="img-thumbnail"
+                         width="70%"
+                         alt="News Icon">
+                </a>
             </div>
 
-            {!! Form::close() !!}
-        </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <a href="{{ route('displayMarket') }}">
+                    <img src="{{ asset('images/market-1.jpg') }}"
+                         class="img-thumbnail"
+                         width="70%"
+                         alt="Market Icon">
+                </a>
+            </div>
 
-        <div class="col-xs-1 col-sm-1 col-md-1" style="margin-top: 75px;">
-            <a href="#" id="mute" onclick="muteVoice()">
-                <img src="{{ asset('images/mute-1.png') }}"
-                     class="img-thumbnail"
-                     width="40%"
-                     alt="Hospital Icon">
-            </a>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <a href="{{ route('displayHospital') }}">
+                    <img src="{{ asset('images/hospital-2.ico') }}"
+                         class="img-thumbnail"
+                         width="70%"
+                         alt="Hospital Icon">
+                </a>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                {!! Form::open(array(
+                    'role' => 'form',
+                    'url' => '/'
+                )) !!}
+
+                <input id="latitude" type="hidden" name="latitude" value="">
+                <input id="longitude" type="hidden" name="longitude" value="">
+                <div class="text-center">
+                    <input class="btn btn-default btn-lg"
+                           type="image" width="75%"
+                           src="{{ asset('images/weather-1.png') }}" alt="Submit">
+                </div>
+
+                {!! Form::close() !!}
+            </div>
+
+            <div class="col-xs-1 col-sm-1 col-md-1" style="margin-top: 75px;">
+                <a href="#" id="mute" onclick="muteVoice()">
+                    <img src="{{ asset('images/mute-1.png') }}"
+                         class="img-thumbnail"
+                         width="40%"
+                         alt="Hospital Icon">
+                </a>
+            </div>
         </div>
 
     </div>
@@ -300,10 +302,6 @@
                     "Say 'MARKET' to see the prices of items in local markets. " +
                     "Say 'NEWS' to access current news from the government." +
                     "Say 'HOSPITAL' to see health providers around you.";
-//            var textID =
-//                    "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
-//                    "Menu satu, berita; Menu dua, cek harga bahan pangan; Menu tiga, cek layanan kesehatan terdekat. " +
-//                    "Menu empat, cek prakiraan cuaca.";
 
             var textID =
                       "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +

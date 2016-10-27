@@ -1,3 +1,11 @@
+<!--
+* File: hospital.blade.php
+* Owner: Alex Simangunsong
+* Purpose: Hospital page
+* Versions
+*   User    |       Date       |            Description              |
+*   Alex    |    13/10/2016    | Developed                           |
+!-->
 
 @extends('app')
 
@@ -13,11 +21,36 @@
 
 @section('content')
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="text-center">
+                    <a href="{{ URL::previous() }}">
+                        <img src="{{ asset('images/left-arrow.ico') }}"
+                             style="top:50%;"
+                             width=25%"
+                             alt="Weather Icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="text-center">
+                    <img src="{{ asset('images/hospital-2.ico') }}"
+                         class=""
+                         width=30%"
+                         alt="Weather Icon">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
 
     </div>
 
     <div class="jumbotron text-center">
-        <h1>Nearest Health Service Providers</h1>
+        <h1>Layanan Kesehatan di sekitar anda</h1>
         <div class="container-fluid">
             <div id="map"></div>
         </div>

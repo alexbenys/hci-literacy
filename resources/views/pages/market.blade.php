@@ -9,6 +9,10 @@
 
 @extends('app')
 
+@section('onLoadFunction')
+    marketLoadFunctions()
+@endsection
+
 @section('css')
 
 @endsection
@@ -124,4 +128,28 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('pageSpecificJS')
+    <script>
+        function marketLoadFunctions() {
+            var textEN ="";
+
+            var textID =
+                    "Berikut adalah harga bahan pokok di pasar dan agen terdekat. Tekan pada gambar untuk melihat harga lengkap." +
+                    "";
+
+
+
+            setTimeout(function() {
+                console.log("Launching welcome message" );
+//                responsiveVoice.speak(textEN,'UK English Male');
+//                responsiveVoice.speak(textEN,'US English Female', {rate: 0.7});
+//                responsiveVoice.speak(textEN,'UK English Female', {rate: 0.9});
+//                responsiveVoice.speak(textEN,'US English Female');
+//                responsiveVoice.speak(textEN,'Australian Female');
+                responsiveVoice.speak(textID,'Indonesian Female');
+            },500);
+        }
+    </script>
 @endsection
