@@ -13,14 +13,28 @@ class VoiceController extends Controller
         $voice = $request->input('hiddenInput');
 //        dd($voice);
 
+//        switch ($voice) {
+//            case 'Market': $redirectTo = route('displayMarket');
+//                break;
+//            case 'Weather' : $redirectTo = route('displayWeather');
+//                break;
+//            case 'Hospital' : $redirectTo = route('displayHospital');
+//                break;
+//            case 'News' : $redirectTo = route('displayNews');
+//                break;
+//            default : $redirectTo = route('home');
+//        }
+
         switch ($voice) {
-            case 'Market': $redirectTo = route('displayMarket');
+            case 'Belanja': $redirectTo = route('displayMarket');
                 break;
-            case 'Weather' : $redirectTo = route('displayWeather');
+            case 'Cuaca' : $redirectTo = route('displayWeather');
                 break;
-            case 'Hospital' : $redirectTo = route('displayHospital');
+            case 'Rumah Sakit' : $redirectTo = route('displayHospital');
                 break;
-            case 'News' : $redirectTo = route('displayNews');
+            case 'Klinik' : $redirectTo = route('displayHospital');
+                break;
+            case 'Berita' : $redirectTo = route('displayNews');
                 break;
             default : $redirectTo = route('home');
         }
