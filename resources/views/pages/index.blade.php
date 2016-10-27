@@ -157,6 +157,15 @@
             {!! Form::close() !!}
         </div>
 
+        <div class="col-xs-1 col-sm-1 col-md-1" style="margin-top: 75px;">
+            <a href="#" id="mute" onclick="muteVoice()">
+                <img src="{{ asset('images/mute-1.png') }}"
+                     class="img-thumbnail"
+                     width="40%"
+                     alt="Hospital Icon">
+            </a>
+        </div>
+
     </div>
 
     <div class="jumbotron text-center">
@@ -286,32 +295,44 @@
             getLocation();
 
             var textEN =
-                    "Welcome to voice services; Press the red button to speak, or click on the desired menu at the top of the screen." +
-                    "Say 'weather' to check the current weather." +
-                    "Say 'market' to see the prices of items displayed in local markets. " +
-                    "Say 'news' to access current news from the government." +
-                    "Say 'hospital' to see health providers around you.";
+                    "Welcome to voice services; Press the red button to speak, or click on the desired menu at the top of the screen to continue." +
+                    "Say 'WEATHER' to check the current weather." +
+                    "Say 'MARKET' to see the prices of items in local markets. " +
+                    "Say 'NEWS' to access current news from the government." +
+                    "Say 'HOSPITAL' to see health providers around you.";
+//            var textID =
+//                    "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
+//                    "Menu satu, berita; Menu dua, cek harga bahan pangan; Menu tiga, cek layanan kesehatan terdekat. " +
+//                    "Menu empat, cek prakiraan cuaca.";
+
             var textID =
-                    "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
-                    "Menu satu, berita; Menu dua, cek harga bahan pangan; Menu tiga, cek layanan kesehatan terdekat. " +
-                    "Menu empat, cek prakiraan cuaca.";
+                      "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
+                      "Katakan 'berita' untuk mengakses berita terkini; Katakan 'belanja', untuk melihat harga bahan pangan; " +
+                      "Katakan 'klinik' atau 'rumah sakit', untuk melihat layanan kesehatan terdekat. " +
+                      "Katakan 'cuaca', untuk mengetahui prakiraan cuaca.";
+
 
             setTimeout(function() {
                 console.log("Launching welcome message" );
 //                responsiveVoice.speak(textEN,'UK English Male');
-                responsiveVoice.speak(textEN,'US English Female');
+//                responsiveVoice.speak(textEN,'US English Female', {rate: 0.7});
+//                responsiveVoice.speak(textEN,'UK English Female', {rate: 0.9});
 //                responsiveVoice.speak(textEN,'US English Female');
 //                responsiveVoice.speak(textEN,'Australian Female');
-//                responsiveVoice.speak(textID,'Indonesian Female');
+                responsiveVoice.speak(textID,'Indonesian Female');
             },500);
         }
     </script>
 
-    {{--ID--}}
 
-    {{--<script src='//vws.responsivevoice.com/v/e?key=pfqsv23B'></script>--}}
 
-    {{--EN--}}
+    <script>
+        function muteVoice() {
+            responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+        }
+    </script>
+
+
 
     <script src="{{ asset('js/location.js') }}"></script>
 
