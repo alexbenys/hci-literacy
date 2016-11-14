@@ -53,7 +53,7 @@
     </div>
 
     <div class="jumbotron text-center">
-        <h1>News</h1>
+        <h1>Berita terkini</h1>
         <br><br>
 
         <div class="row">
@@ -123,7 +123,8 @@
                     "Berita terkini pertama: Presiden Joko Widodo semakin serius dalam memberantas pungutan liar. " +
                     "Berita kedua: Gubernur DKI Jakarta, Basuki Cahaya Purnama sudah mengambil cuti kampanye." +
                     "Berita ketiga: Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market." +
-                    "Berita keempat: Terminal Jatijajar Depok segera beroperasi.";
+                    "Berita keempat: Terminal Jatijajar Depok segera beroperasi." +
+                    "Pilih salah satu berita atau tekan panah untuk kembali ke menu utama.";
 
 
             setTimeout(function() {
@@ -132,7 +133,7 @@
 //                responsiveVoice.speak(textEN,'UK English Female', {rate: 0.9});
 //                responsiveVoice.speak(textEN,'US English Female');
 //                responsiveVoice.speak(textEN,'Australian Female');
-//                responsiveVoice.speak(textID,'Indonesian Female');
+                responsiveVoice.speak(textID,'Indonesian Female');
             },500);
         }
     </script>

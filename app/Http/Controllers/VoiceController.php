@@ -30,7 +30,7 @@ class VoiceController extends Controller
                 break;
             case 'Cuaca' : $redirectTo = route('displayWeather');
                 break;
-            case 'Rumah Sakit' : $redirectTo = route('displayHospital');
+            case 'Rumah sakit' : $redirectTo = route('displayHospital');
                 break;
             case 'Klinik' : $redirectTo = route('displayHospital');
                 break;

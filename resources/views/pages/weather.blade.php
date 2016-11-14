@@ -121,8 +121,9 @@
                     "or click on the arrow to go to the previous menu";
             var textID = "Berikut adalah prakiraan cuaca hari ini. Cuaca hari ini " +
                     "{{ Session::get('forecast')['currently']['summary'] }}" + ", dengan suhu " +
-                    "{{ Session::get('forecast')['currently']['temperature'] }}" + " derajat selsius." +
-                    "Tekan tombol dibawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
+                    "enam belas" + " derajat selsius." +
+                    {{--"{{ Session::get('forecast')['currently']['temperature'] }}" + " derajat selsius." +--}}
+                    "Anda dapat menekan tombol dibawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
 
             setTimeout(function() {
                 console.log("Launching welcome message" );

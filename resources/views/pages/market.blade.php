@@ -47,9 +47,9 @@
     </div>
 
     <div class="jumbotron text-center">
-        <h1>Select items</h1>
+        <h1>e-Pasar</h1>
         <div class="lead">
-            Touch and hold to hear description
+            {{--Touch and hold to hear description--}}
         </div>
 
         <div class="row" style="margin-top: 50px;">
