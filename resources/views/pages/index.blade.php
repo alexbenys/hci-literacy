@@ -304,7 +304,7 @@
                     "Say 'HOSPITAL' to see health providers around you.";
 
             var textID =
-                      "Selamat datang di layanan suara; TekanTombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
+                      "Selamat datang di layanan suara, 'Tekan' TombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
                       "Katakan 'berita' untuk mengakses berita terkini; Katakan 'belanja', untuk melihat harga bahan pangan; " +
                       "Katakan 'klinik' atau 'rumah sakit', untuk melihat layanan kesehatan terdekat. " +
                       "Katakan 'cuaca', untuk mengetahui prakiraan cuaca.";
@@ -318,7 +318,7 @@
 //                responsiveVoice.speak(textEN,'US English Female');
 //                responsiveVoice.speak(textEN,'Australian Female');
                 responsiveVoice.speak(textID,'Indonesian Female');
-            },500);
+            },400);
         }
     </script>
 
