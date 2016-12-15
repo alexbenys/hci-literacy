@@ -26,9 +26,15 @@ class VoiceController extends Controller
 //        }
 
         switch ($voice) {
+            case 'Menu utama': $redirectTo = route('home');
+                break;
             case 'Belanja': $redirectTo = route('displayMarket');
                 break;
+            case 'Pasar': $redirectTo = route('displayMarket');
+                break;
             case 'Cuaca' : $redirectTo = route('displayWeather');
+                break;
+            case 'Temperatur' : $redirectTo = route('displayWeather');
                 break;
             case 'Rumah sakit' : $redirectTo = route('displayHospital');
                 break;

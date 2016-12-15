@@ -119,18 +119,18 @@
                     "Here is the weather forecast for today. The current temperature is 20 degree celsius." +
                     "Click the button below to find out the weather forecast for the next few days, " +
                     "or click on the arrow to go to the previous menu";
-            var textID = "Berikut adalah prakiraan cuaca hari ini. Cuaca hari ini " +
-                    "{{ Session::get('forecast')['currently']['summary'] }}" + ", dengan suhu " +
-                    "enam belas" + " derajat selsius." +
+            var textID = "Berikut adalah prakiraan cuaca hari ini, Cuaca hari ini " +
+                    "{{ Session::get('forecast')['currently']['summary'] }}" + " dengan suhu " +
+                    "dua puluh enam" + " derajat selsius," +
                     {{--"{{ Session::get('forecast')['currently']['temperature'] }}" + " derajat selsius." +--}}
-                    "Anda dapat menekan tombol dibawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
+                    "Anda dapat menekan tombol di bawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
 
             setTimeout(function() {
                 console.log("Launching welcome message" );
 //                responsiveVoice.speak(textEN,'UK English Male');
 //                responsiveVoice.speak(textEN,'US English Female');
                 responsiveVoice.speak(textID,'Indonesian Female');
-            },500);
+            },300);
         }
     </script>
 @endsection
