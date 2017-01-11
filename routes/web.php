@@ -53,6 +53,21 @@ Route::get('garlic', [
     'uses' => 'PagesController@getGarlic'
 ]);
 
+Route::get('shalots', [
+    'as' => 'displayShalots',
+    'uses' => 'PagesController@getShalots'
+]);
+
+Route::get('redchilli', [
+    'as' => 'displayRedChilli',
+    'uses' => 'PagesController@getRedChilli'
+]);
+
+Route::get('tomato', [
+    'as' => 'displayTomato',
+    'uses' => 'PagesController@getTomato'
+]);
+
 Route::get('source-log', [
     'as' => 'displaySourceLog',
     'uses' => 'PagesController@getSourceLog'

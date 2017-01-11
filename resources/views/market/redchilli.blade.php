@@ -45,15 +45,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-push-3 col-md-4">
-                    <img src="{{ asset('images/agriculture/garlic-1.jpg') }}"
+                    <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
                          class="img-thumbnail"
                          width="70%"
-                         alt="Garlic Icon">
+                         alt="Shalots Icon">
                 </div>
 
                 <div class="col-md-push-3 col-md-4">
-                    <h2>Bawang Putih</h2>
-                    <h3>Harga: <h2 style="color: green;">Rp 39.000</h2></h3>
+                    <h2>Cabe Merah</h2>
+                    <h3>Harga: <h2 style="color: green;">Rp 65.000</h2></h3>
                     {{--<a href="#" class="btn btn-lg btn-primary">Dimana membelinya?</a>--}}
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
             var textEN =
                     "";
-            var textID = "Harga bawang putih hari ini: tiga puluh sembilan ribu rupiah per kilogram;" +
+            var textID = "Harga cabe merah hari ini: enam puluh lima ribu rupiah per kilogram;" +
                     "Anda dapat menekan tombol panah untuk melihat harga bahan pangan lainnya.";
 
             setTimeout(function() {

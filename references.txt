@@ -42,6 +42,10 @@ kacang-panjang-1 - http://manfaat.co.id/wp-content/uploads/2014/08/kacang-panjan
 kacang-panjang-2 - http://www.buahunik.com/wp-content/uploads/2015/03/kacang-panjang.png
 
 
+WEATHER
+cloudy - http://icon-park.com/imagefiles/simple_weather_icons_cloudy.png
+
+
 APIs
 weather - https://packagist.org/packages/nwidart/laravel-forecast, https://github.com/nWidart/forecast-php
 

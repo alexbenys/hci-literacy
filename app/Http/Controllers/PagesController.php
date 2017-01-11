@@ -26,6 +26,21 @@ class PagesController extends Controller
         return view('market.garlic');
     }
 
+    public function getShalots()
+    {
+        return view('market.shalots');
+    }
+
+    public function getRedChilli()
+    {
+        return view('market.redchilli');
+    }
+
+    public function getTomato()
+    {
+        return view('market.tomato');
+    }
+
     public function getSourceLog()
     {
         return view('pages.sourcelog');

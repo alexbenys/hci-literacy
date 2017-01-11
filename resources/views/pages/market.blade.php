@@ -82,7 +82,7 @@
             </div>
 
             <div class="col-md-push-2 col-md-2">
-                <a href="#">
+                <a href="{{ route('displayRedChilli') }}">
                     <img src="{{ asset('images/agriculture/red-chilli-1.png') }}"
                          class="img-thumbnail"
                          width="100%"
@@ -102,7 +102,7 @@
 
         <div class="row" style="margin-top: 50px;">
             <div class="col-md-push-2 col-md-2">
-                <a href="#">
+                <a href="{{ route('displayTomato') }}">
                     <img src="{{ asset('images/agriculture/tomato-1.jpg') }}"
                          class="img-thumbnail"
                          width="100%"
@@ -129,7 +129,7 @@
             </div>
 
             <div class="col-md-push-2 col-md-2">
-                <a href="#">
+                <a href="{{ route('displayShalots') }}">
                     <img src="{{ asset('images/agriculture/shalots-1.jpg') }}"
                          class="img-thumbnail"
                          width="100%"
