@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div class="text-center">
-                    <a href="{{ URL::previous() }}">
+                    <a href="{{ route('home') }}">
                         <img src="{{ asset('images/left-arrow.ico') }}"
                              style="top:50%;"
                              width=25%"
@@ -131,9 +131,9 @@
                     "or click on the arrow to go to the previous menu";
             var textID = "Berikut adalah prakiraan cuaca hari ini, Cuaca hari ini " +
                     "{{ Session::get('forecast')['currently']['summary'] }}" + " dengan suhu " +
-                    "dua puluh enam" + " derajat selsius," +
+                    "tiga puluh" + " derajat selsius," +
                     {{--"{{ Session::get('forecast')['currently']['temperature'] }}" + " derajat selsius." +--}}
-                    "Anda dapat menekan tombol di bawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
+                    "Anda dapat menggeser tampilan ke bawah untuk melihat prakiraan cuaca beberapa hari ke depan.";
 
             setTimeout(function() {
                 console.log("Launching welcome message" );

@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="text-center">
-                    <a href="{{ URL::previous() }}">
+                    <a href="{{ route('displayMarket') }}">
                         <img src="{{ asset('images/left-arrow.ico') }}"
                              style="top:50%;"
                              width=25%"

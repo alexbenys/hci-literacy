@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div class="text-center">
-                    <a href="{{ URL::previous() }}">
+                    <a href="{{ route('home') }}">
                         <img src="{{ asset('images/left-arrow.ico') }}"
                              style="top:50%;"
                              width=25%"
