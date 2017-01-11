@@ -48,5 +48,12 @@
     </footer>
 
 @yield('pageSpecificJS')
+
+
+    <script>
+        function muteVoice() {
+            responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+        }
+    </script>
 </body>
 </html>

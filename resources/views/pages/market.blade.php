@@ -26,7 +26,7 @@
                         <img src="{{ asset('images/left-arrow.ico') }}"
                              style="top:50%;"
                              width="25%"
-                             alt="Weather Icon">
+                             alt="Back Icon Icon">
                     </a>
                 </div>
             </div>
@@ -40,8 +40,18 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-2">
 
+            </div>
+
+            <div class="col-xs-1 col-sm-1 col-md-1" style="">
+                <a href="#" id="mute" onclick="muteVoice()">
+                    <img src="{{ asset('images/mute-1.png') }}"
+                         class="img-thumbnail"
+                         style="margin-top: 20px;"
+                         width="90%"
+                         alt="Mute Icon">
+                </a>
             </div>
         </div>
     </div>

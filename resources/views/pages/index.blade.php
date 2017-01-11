@@ -321,30 +321,18 @@
     </script>
 
 
-    <script>
-        $(function(){
-            $('div.highlightable').click(function(){
-                $(this).addClass('highlighted');
-                setTimeout(function(){
-                    $('div.highlightable').removeClass('highlighted');}, 2000);
-            });
-    </script>
-
-    <script>
-        function muteVoice() {
-            responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
-        }
-    </script>
+    
 
 
-
+    {{--Get location script--}}
     <script src="{{ asset('js/location.js') }}"></script>
 
     {{--Wait animation--}}
     <script src="{{ asset('js/wait.js') }}"></script>
 
-
+    {{--Calling Voice Recognition Script--}}
     <script src="{{ asset('js/callVR.js') }}"></script>
 
+    {{--Calling Web Speech Script--}}
     <script src="{{ asset('js/webspeech.js') }}"></script>
 @endsection

@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-2">
                 {{--<div class="text-center">--}}
                     {{--<img src="{{ asset('images/news-1.png') }}"--}}
                          {{--class=""--}}
@@ -48,7 +48,19 @@
                          {{--alt="Weather Icon">--}}
                 {{--</div>--}}
             </div>
+
+            <div class="col-xs-1 col-sm-1 col-md-1" style="">
+                <a href="#" id="mute" onclick="muteVoice()">
+                    <img src="{{ asset('images/mute-1.png') }}"
+                         class="img-thumbnail"
+                         style="margin-top: 20px;"
+                         width="90%"
+                         alt="Mute Icon">
+                </a>
+            </div>
         </div>
+
+
 
     </div>
 
@@ -115,7 +127,7 @@
                     "Berikut adalah berita terbaru hari ini. Tekan gambar untuk melanjutkan." +
                     "Berita terkini pertama: Presiden Joko Widodo semakin serius dalam memberantas pungutan liar. " +
                     "Berita kedua: Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market." +
-                    "Berita ketiga: Walikota Depok Minta Warga Lapor Jika Dipersulit Dapat Layanan di RSUD Depok." +
+                    "Berita ketiga: Walikota Depok Minta Warga Lapor Jika Dipersulit Dapat Layanan di RSUD Depok" +
                     "Berita keempat: Terminal Jatijajar Depok segera beroperasi." +
                     "Pilih salah satu berita atau tekan panah untuk kembali ke menu utama.";
 
