@@ -32,7 +32,7 @@
 </head>
 {{--<body onload="getLocation()">--}}
 <body onload="@yield('onLoadFunction')">
-    <small><a href="/">version 0.0.1</a></small>
+    <small><a href="/">version 0.0.2</a></small>
     <nav>
 
     </nav>

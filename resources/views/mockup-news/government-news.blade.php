@@ -69,11 +69,11 @@
 
             <div class="col-md-push-2 col-md-4">
                 <a href="#">
-                    <img src="{{ asset('images/news/ahok-1.jpg') }}"
+                    <img src="{{ asset('images/news/idris-1.jpg') }}"
                          class="img img-thumbnail"
-                         width="75%"
+                         width="85%"
                          alt="News Placeholder">
-                    <p>Basuki Cahaya Purnama mengambil cuti kampanye hari ini</p>
+                    <p>Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market</p>
                 </a>
             </div>
         </div>
@@ -87,7 +87,7 @@
                          class="img img-thumbnail"
                          width="85%"
                          alt="News Placeholder">
-                    <p>Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market</p>
+                    <p>Walikota Depok Minta Warga Lapor Jika Dipersulit Dapat Layanan di RSUD Depok</p>
                 </a>
             </div>
 
@@ -111,18 +111,11 @@
     <script>
         function newsLoadFunctions() {
 
-            var textEN =
-                    "Welcome to voice services; Press the red button to speak, or click on the desired menu at the top of the screen to continue." +
-                    "Say 'WEATHER' to check the current weather." +
-                    "Say 'MARKET' to see the prices of items in local markets. " +
-                    "Say 'NEWS' to access current news from the government." +
-                    "Say 'HOSPITAL' to see health providers around you.";
-
             var textID =
                     "Berikut adalah berita terbaru hari ini. Tekan gambar untuk melanjutkan." +
                     "Berita terkini pertama: Presiden Joko Widodo semakin serius dalam memberantas pungutan liar. " +
-                    "Berita kedua: Gubernur DKI Jakarta, Basuki Cahaya Purnama sudah mengambil cuti kampanye." +
-                    "Berita ketiga: Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market." +
+                    "Berita kedua: Walikota Depok, Idris Abdul Shomad berhenti mengeluarkan izin mini market." +
+                    "Berita ketiga: Walikota Depok Minta Warga Lapor Jika Dipersulit Dapat Layanan di RSUD Depok." +
                     "Berita keempat: Terminal Jatijajar Depok segera beroperasi." +
                     "Pilih salah satu berita atau tekan panah untuk kembali ke menu utama.";
 

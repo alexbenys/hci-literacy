@@ -158,12 +158,12 @@
                 {!! Form::close() !!}
             </div>
 
-            <div class="col-xs-1 col-sm-1 col-md-1" style="margin-top: 75px;">
+            <div class="col-xs-1 col-sm-1 col-md-1" style="">
                 <a href="#" id="mute" onclick="muteVoice()">
                     <img src="{{ asset('images/mute-1.png') }}"
                          class="img-thumbnail"
-                         width="40%"
-                         alt="Hospital Icon">
+                         width="100%"
+                         alt="Mute Icon">
                 </a>
             </div>
         </div>
@@ -290,8 +290,6 @@
 
 @section('pageSpecificJS')
 
-    <script src=""></script>
-
     <script>
         function indexLoadFunctions() {
             getLocation();
@@ -323,6 +321,14 @@
     </script>
 
 
+    <script>
+        $(function(){
+            $('div.highlightable').click(function(){
+                $(this).addClass('highlighted');
+                setTimeout(function(){
+                    $('div.highlightable').removeClass('highlighted');}, 2000);
+            });
+    </script>
 
     <script>
         function muteVoice() {

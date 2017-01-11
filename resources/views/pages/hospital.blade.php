@@ -66,17 +66,19 @@
         var infowindow;
 
         function initMap() {
-            var canberra = {lat: -35.282, lng: 149.1287};
+//            var canberra = {lat: -35.282, lng: 149.1287};
+            var sekolahMaster = {lat: -6.390531, lng: 106.823833};
+//            var sekolahMaster = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
             map = new google.maps.Map(document.getElementById('map'), {
-                center: canberra,
+                center: sekolahMaster,
                 zoom: 15
             });
 
             infowindow = new google.maps.InfoWindow();
             var service = new google.maps.places.PlacesService(map);
             service.nearbySearch({
-                location: canberra,
+                location: sekolahMaster,
                 radius: 5000,
                 type: ['hospital']
             }, callback);
@@ -94,6 +96,7 @@
             var placeLoc = place.geometry.location;
             var marker = new google.maps.Marker({
                 map: map,
+                label: '+',
                 position: place.geometry.location
             });
 
