@@ -7,6 +7,11 @@
 *   Alex     |    06/09/2016    | Developed                           |
 **/
 
+
+body {
+    background-image: url("../images/batik-1.jpg");
+} 
+
 .top-tiles {
     margin-top: 20px;
     margin-bottom: 20px;

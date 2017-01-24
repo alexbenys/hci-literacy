@@ -8,7 +8,12 @@
 **/
 
 
+a, a:visited, p {
+    color: whitesmoke;
+}
+
 a:hover {
     text-decoration: none;
+    colour: grey;
 }
 

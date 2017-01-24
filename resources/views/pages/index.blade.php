@@ -171,25 +171,6 @@
     </div>
 
     <div class="jumbotron text-center">
-        {{--<h1>What are you looking for?</h1>--}}
-        {{--<br>--}}
-        {{--<br>--}}
-
-        {{--<div class="row">--}}
-            {{--<div class="col-xs-push-3 col-sm-push-3 col-md-push-3 col-lg-push-3 col-xs-6 col-sm-6 col-md-6 col-lg-6">--}}
-                {{--<div class="input-group stylish-input-group">--}}
-                    {{--<input type="text" class="form-control"  placeholder="Search" >--}}
-                    {{--<span class="input-group-addon">--}}
-                        {{--<button type="submit">--}}
-                            {{--<span class="glyphicon glyphicon-search"></span>--}}
-                        {{--</button>--}}
-                    {{--</span>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--<br>--}}
-
-        {{--<h2>OR</h2>--}}
 
         <br>
 

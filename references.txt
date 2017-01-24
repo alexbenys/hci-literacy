@@ -10,6 +10,10 @@ market-2.png - https://cdn4.iconfinder.com/data/icons/business-soft/512/market_s
 market-3.png - https://www.iconexperience.com/_img/o_collection_png/green_dark_grey/512x512/plain/market_stand.png
 speaking-1.png - http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/rounded-glossy-black-icons-people-things/066203-rounded-glossy-black-icon-people-things-speech.png
 
+batik-1 - http://kingofwallpapers.com/batik/batik-015.jpg
+batik-2 - http://kingofwallpapers.com/batik/batik-017.jpg
+batik-3 - https://s-media-cache-ak0.pinimg.com/originals/6e/77/ae/6e77aed1239d67040c52fed08f82c690.jpg
+
 AGRICULTURAL ICONS
 spinach-1.jpg - http://www.buyfruit.com.au/images/P/English_Spinach__67562.jpg
 red-chilli-1.png - http://www.clipartpanda.com/clipart_images/chili-clip-art-20036039
