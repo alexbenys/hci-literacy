@@ -4,6 +4,6 @@ $('#start_button').click (function (e) {
 
     setTimeout(function () {
         document.getElementById("voiceForm").submit();
-    }, 5000);
+    }, 6500);
 
 });

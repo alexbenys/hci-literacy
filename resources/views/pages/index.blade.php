@@ -291,11 +291,6 @@
 
             setTimeout(function() {
                 console.log("Launching welcome message" );
-//                responsiveVoice.speak(textEN,'UK English Male');
-//                responsiveVoice.speak(textEN,'US English Female', {rate: 0.7});
-//                responsiveVoice.speak(textEN,'UK English Female', {rate: 0.9});
-//                responsiveVoice.speak(textEN,'US English Female');
-//                responsiveVoice.speak(textEN,'Australian Female');
                 responsiveVoice.speak(textID,'Indonesian Female');
             },500);
         }

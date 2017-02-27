@@ -8,9 +8,9 @@
 **/
 
 
-a, a:visited, p {
-    color: whitesmoke;
-}
+/*a, a:visited, p {*/
+    /*color: whitesmoke;*/
+/*}*/
 
 a:hover {
     text-decoration: none;
