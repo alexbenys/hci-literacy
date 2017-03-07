@@ -32,7 +32,7 @@
 </head>
 {{--<body onload="getLocation()">--}}
 <body onload="@yield('onLoadFunction')">
-    <small><a href="/">version 0.0.2</a></small>
+    <small><a href="/">version 2.0</a></small>
     <nav>
 
     </nav>
@@ -40,7 +40,7 @@
     @yield('content')
 
     <footer style="margin-top: 20px;">
-        <div class="text-center">
+        <div class="text-center" style="background-color: rgba(255,255,255,0.7); margin-left: 650px; margin-right: 650px;">
             <a href="{{ route('displaySourceLog') }}">Source Log</a> |
             <a href="http://www.anu.edu.au/">Australian National University</a> |
             <a href="#">Contact Me</a>
