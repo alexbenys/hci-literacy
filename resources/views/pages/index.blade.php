@@ -257,7 +257,7 @@
             <div class="modal-content">
                 <div class="modal-header text-left">
                     <br><br>
-                    <h2 class="modal-title">Please speak now<span id="wait">.</span></h2>
+                    <h2 class="modal-title">Silakan berbicara sekarang<span id="wait">.</span></h2>
                     <br><br>
                 </div>
                 <div class="modal-footer text-center">
@@ -299,7 +299,13 @@
     </script>
 
 
-    
+    <script>
+        navigator.geolocation.getCurrentPosition(function(location) {
+            console.log(location.coords.latitude);
+            console.log(location.coords.longitude);
+            console.log(location.coords.accuracy);
+        });
+    </script>
 
 
     {{--Get location script--}}
