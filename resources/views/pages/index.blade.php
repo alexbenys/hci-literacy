@@ -277,10 +277,11 @@
 
             var textEN =
                     "Welcome to voice services; Press the red button to speak, or click on the desired menu at the top of the screen to continue." +
-                    "Say 'WEATHER' to check the current weather." +
-                    "Say 'MARKET' to see the prices of items in local markets. " +
                     "Say 'NEWS' to access current news from the government." +
-                    "Say 'HOSPITAL' to see health providers around you.";
+                    "Say 'MARKET' to see the prices of items in local markets. " +
+                    "Say 'HOSPITAL' to see health providers around you." +
+                    "Say 'WEATHER' to check the current weather.";
+
 
             var textID =
                       "Selamat datang di layanan suara, 'Tekan' TombolMerah untuk berbicara atau tekan pilihan menuDiatas untuk layanan terkait. " +
@@ -292,6 +293,7 @@
             setTimeout(function() {
                 console.log("Launching welcome message" );
                 responsiveVoice.speak(textID,'Indonesian Female');
+//                responsiveVoice.speak(textEN);
             },500);
         }
     </script>
